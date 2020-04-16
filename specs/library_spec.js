@@ -40,4 +40,15 @@ describe('Library', function () {
     library.addBooks(books);
     assert.strictEqual(library.bookCount(), 3);
   });
+
+  it('should be able to print all books', function () {
+    const books = [
+      new Book('J R R Tolkien', 'The Fellowship of the Ring', 'Fantasy'),
+      new Book('J R R Tolkien', 'The Two Towers', 'Fantasy'),
+      new Book('J R R Tolkien', 'The Return of the King', 'Fantasy')
+    ];
+    library.addBooks(books);
+    library.printInventory(); 
+  })
+
 });
