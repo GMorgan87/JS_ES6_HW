@@ -1,4 +1,5 @@
-class Library {
+
+export default class Library {
 
   constructor(books = []) {
     this.books = books
@@ -16,6 +17,3 @@ class Library {
     })
   }
 }
-
-
-module.exports = Library;
